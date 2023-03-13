@@ -1,0 +1,87 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 15% 1fr 20%;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.header {
+    grid-area: 1/1/2/4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-rows: 5% 1fr 1fr 1fr 5%;
+    gap: 20px;
+    background-color: lightyellow;
+}
+
+
+.section {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.section0 {
+    grid-area: 2/2/3/4;
+}
+
+.section1 {
+    grid-area: 3/2/4/3;
+    background-color: lightsalmon;
+}
+
+.section2 {
+    grid-area: 3/3/4/4;
+    background-color: lightsalmon;
+}
+
+.section3 {
+    grid-area: 4/2/5/4;
+    background-color: lightsalmon;
+}
+
+.aside {
+    grid-area: 2/2/3/3;
+    display: grid;
+    justify-content: center;
+    padding: 10%;
+    background-color: lightgreen;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: lightgrey;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+    background-color: grey;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1em;
+}
